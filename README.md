@@ -31,7 +31,7 @@ Indexing is the primary solution to improve the performance of a database. Mongo
 
 By default, Mongo adds an index on the id field. Currently, the project has no other indexes in the ** Heatmap DB**. This would have a ripple effect on all read queries of the DB and will lead to poor performance on the user side of the app. 
 
-![](image-krf7jzah.png)
+![](ScreenshotBizBaz.png)
 
 ### Normalization
 
@@ -117,7 +117,7 @@ process(int_scoop, "International")
 This makes the code more readable and easier to maintain as well as modify. Another advantage of breaking these out as functions is we can share them across all scrapers instead of limiting this to Ministry Of Agriculture scraper. 
 
 An example of this, is the function named 
-"__is_p_or_block" which is already shared between CDT and xinhua scrapers. Another example is which is shared between CDT, ecns and mofa scrapers. 
+"__is_p_or_block" which is already shared between CDT and xinhua scrapers. There are multiple examples of such functions which are duplicated in the code.
 
 ### Code cleanup and refactoring
 
