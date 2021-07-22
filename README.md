@@ -24,7 +24,7 @@ This creates an individual connection for every scraper which is a poor practice
 
 Which means you're paying for the overhead of creating and maintaing these connections everytime while all previously made connections are sitting idle. 
 
-Further, the database connection should always be stored as a server level variable then than hardcoding it as a string. As the project gets scaled and the db calls become more frequent, it becomes more logical to run your own custom mongo server with replicas running. In such an instance, the developer would be needed to visit every file and update the values with the new database connection strings. This will create further problems if a few files are missed from the refactor. 
+Further, the database connection should always be stored as a server level variable than hardcoding it as a string. As the project gets scaled and the db calls become more frequent, it becomes more logical to run your own custom mongo server with replicas running. In such an instance, the developer would be needed to visit every file and update the values with the new database connection strings. This will create further problems if a few files are missed from the refactor. 
 
 ### Indexing 
 Indexing is the primary solution to improve the performance of a database. MongoDB by design, is a much slower database than MySQL or Postgres. Due to this reason, it is essential to have well maintained indexes to have a quick turnaround in db read queries.
