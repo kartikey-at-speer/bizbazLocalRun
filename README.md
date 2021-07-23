@@ -159,7 +159,7 @@ can be simplified to:
 
 # Overall review
 
-In terms of the Python and Flask programs, the BizBaz platform has a significant scope for improvement in terms of code quality and system design principles. With these changes in place, I expect the platform to be able to be able to:
+In terms of the Python and Flask programs, the BizBaz platform has a significant scope for improvement in terms of code quality and system design principles. With these changes in place, I expect the platform to be able to:
 - Scrape significantly more data
 - Store data in a more a more optimized manner
 - Make the process of insight derivation from data easier and more profound
